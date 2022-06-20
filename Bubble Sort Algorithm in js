@@ -1,0 +1,39 @@
+//Md.Rafiul Islam
+//Daffodil International University
+//01701-729512
+
+function bubbleSortAlgorithm(arr, length)
+{
+    var k = 1;
+    for( i = 0; i < length-1; i++){
+
+        for( j = 0; j < length-k; j++){
+
+            if(arr[j] > arr[j+1]){
+
+                var temp = arr[j];
+                arr[j]  = arr[j+1];
+                arr[j+1] = temp;
+
+               
+
+            }
+        }
+        k++;
+    }
+}
+
+function DisplayAlgorithm(arr, length)
+{
+    for (i = 0; i < length; i++)
+    {
+        document.write(arr[i]+ " ");
+    }
+}
+
+var arr = [64, 34, 25, 12, 22, 11, 90];
+var length = arr.length;
+var i, j;
+//document.write(length);
+bubbleSortAlgorithm(arr, length);
+DisplayAlgorithm(arr, length);
